@@ -13,6 +13,10 @@ fi
 
 cp -f configs/templates/$1.config .config
 
+
+##DNS服务##
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
+
 ROOTDIR=`pwd`
 export ROOTDIR=$ROOTDIR
 
